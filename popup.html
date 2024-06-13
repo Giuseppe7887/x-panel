@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+
+
+<head>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #ready {
+            margin: 0;
+            padding: 0;
+            width: 300px;
+            height: 150px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            /* background-color: cadetblue; */
+        }
+
+        #initial-path-selection-text {
+            font-size: 0.7rem;
+            margin-right: 3px;
+        }
+
+        footer {
+            font-size: 0.6rem;
+            position: absolute;
+            bottom: 7px;
+            right: 7px;
+            color: rgba(182, 180, 180, 0.59);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <main id="ready" style="display: none;">
+        <!-- <h1>All right</h1> -->
+        <span style="position: absolute; top: 10px; left: 10px; display: flex; align-items: center; justify-content: center;">
+            <img id="react-logo" width="35px" alt="react-x-panel logo" src="./x-panel-logo.png" />
+            <label style="color: #61dafb;">panel</label>
+        </span>
+
+        <div>
+        </div>
+
+        <div style="display: flex;">
+            <input placeholder="Input your src folder" required id="initial-path-selection" type="text" name="initial-path-selection" />
+            <button id="initial-path-confirm">ok</button>
+        </div>
+        <!-- <label for="initial-path-selection" id="initial-path-selection-text">Select your src folder</label> -->
+
+        <span id="err"></span>
+        <footer id="footer">With love, for <span style="color: #61dafb;">React</span></footer>
+        <!-- <button>aggiorna</button> -->
+    </main>
+
+
+
+    <main id="not-ready">
+        <h3 style="text-align: center;">To start, Open dev tools</h3>
+        <h3 style="text-align: center;">then click on <span style="text-decoration: underline;">x panel</span></h3>
+        <img width="300" src="./devtool_instruction.png" />
+    </main>
+
+
+
+
+</body>
+<script src="popup.js"></script>
+
+
+</html>
