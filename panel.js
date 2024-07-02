@@ -362,7 +362,7 @@ function onLeave(e) {
 // if no global url is set (settable on popup.html) prompt to set it
 // if global is set this function will be not called, instead the file open up in VSC
 function re() {
-  const pathRegex = /^[a-zA-Z]:[\\/](?:[^<>:"\/\\|?*\n]+[\\/])*[^<>:"\/\\|?*\n]*$/;
+  const pathRegex = /^(?:[a-zA-Z]:[\\/](?:[^<>:"\/\\|?*\n]+[\\/])*(?:[^<>:"\/\\|?*\n]*)|\/(?:[^<>:"\/\\|?*\n]+\/)*(?:[^<>:"\/\\|?*\n]*)?)$/;
   inHover = "";
   document.querySelectorAll("a").forEach(e => e.style.backgroundColor = "transparent")
 

@@ -59,7 +59,4 @@ chrome.tabs.onRemoved.addListener(function (tabId, removeInfo) {
 
 })
 
-// chrome.tabs.onCreated.addListener((tab) => {
-//   console.log('A new tab was created:', tab);
-//   // Puoi aggiungere qui il codice che vuoi eseguire quando viene creata una nuova scheda.
-// });
+
