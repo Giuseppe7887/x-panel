@@ -170,9 +170,25 @@ function handleClick(e) {
 
 
     if (!globalPath || globalPath == "" || globalPath.length == 0) {
+        chrome.runtime.sendMessage({ type: "MOUSEOUT", url: currentInHover });
+        currentInHover = "";
+        if (document.querySelector(`#RXP-${counter}`)) {
+            document.querySelector(`#RXP-${counter}`).remove();
+        }
+    
+        e.target.style.backgroundColor = previousBg;
+    
+        // remove all listener classes
+        e.target.classList.forEach(classe => {
+            if (classe.startsWith("__mark_n-")) {
+                e.target.classList.remove(classe)
+            }
+        });
         chrome.runtime.sendMessage({
             type: "setPath:front-end"
         })
+        
+        
     } else {
 
         document.querySelectorAll(".__rxp_marker__").forEach(el => {
