@@ -1,6 +1,9 @@
 # REACT X PANEL <img src="./icon16.png"/>
 
-here is a video tutorial: https://youtube.com/watch?v=t24S-LFsc8c
+short video tutorial: https://youtube.com/watch?v=t24S-LFsc8c
+
+download here: https://chromewebstore.google.com/det...
+
 
 #### 💡It is a chrome extension that can improve and speed up the debugging process for react applications 
 
