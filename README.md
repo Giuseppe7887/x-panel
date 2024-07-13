@@ -2,8 +2,7 @@
 
 short video tutorial: https://youtube.com/watch?v=t24S-LFsc8c
 
-download here: https://chromewebstore.google.com/det...
-
+download here: https://chromewebstore.google.com/detail/x-panel/kkelbjhadlbmiocljoggfhhbbjabamjh
 
 #### 💡It is a chrome extension that can improve and speed up the debugging process for react applications 
 
