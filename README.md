@@ -1,5 +1,7 @@
 # REACT X PANEL <img src="./icon16.png"/>
 
+here is a video tutorial: https://youtube.com/watch?v=t24S-LFsc8c
+
 #### 💡It is a chrome extension that can improve and speed up the debugging process for react applications 
 
 📈It resolves the common problem that occours in every Big React Application,
